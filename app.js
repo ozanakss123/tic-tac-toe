@@ -7,7 +7,7 @@ let gameOver = false;
 let winner;
 
 function startGame() {
-    playerText.textContent = `${player}'s Turn!`
+    playerText.textContent = `Player ${player}'s Turn!`
     playerText.style.color = "white"
 
     blocks.forEach(block => block.addEventListener("click", () => chooseArea(block)))
@@ -33,7 +33,7 @@ function chooseArea(block) {
     checkTie();
 
     if(gameOver) {
-        playerText.textContent = `Game over, ${winner} is winner!`;
+        playerText.textContent = `Game over, Player ${winner} is winner!`;
         blocks.forEach(block => block.style.pointerEvents = 'none');
         button.style.display = "block"
 
@@ -43,11 +43,11 @@ function chooseArea(block) {
 function turnPlayer() {
     if (player === "X"){
         player = "O";
-        playerText.textContent = `${player}'s Turn!`
+        playerText.textContent = `Player ${player}'s Turn!`
         return;
     } else if (player === "O"){
         player = "X";
-        playerText.textContent = `${player}'s Turn!`
+        playerText.textContent = `Player ${player}'s Turn!`
     }
 }
 
