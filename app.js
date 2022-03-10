@@ -33,7 +33,7 @@ function chooseArea(block) {
     checkTie();
 
     if(gameOver) {
-        playerText.textContent = `Game is over, ${winner} is winner!`;
+        playerText.textContent = `Game over, ${winner} is winner!`;
         blocks.forEach(block => block.style.pointerEvents = 'none');
         button.style.display = "block"
 
