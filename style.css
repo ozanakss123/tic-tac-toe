@@ -76,3 +76,24 @@ h2{
 .btn:hover{
     border: 2px solid white;
 }
+
+a{
+    display: flex;
+    justify-content: center;
+}
+
+
+footer p{
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+
+img{
+    margin-top: 1rem;
+    width: 7%;
+}
